@@ -28,6 +28,19 @@ div {
     margin: 10px;
 }
 
+
+.navigation-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navigation-bar li {
+    list-style: none;
+}
+
+
+
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
