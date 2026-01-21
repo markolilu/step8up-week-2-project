@@ -1,7 +1,7 @@
 :root {
-    --brand-color-primary:
-    --brand-color-secondary:
-    --brand-color-tertiary:
+    --brand-color-primary: #6bb868;
+    --brand-color-secondary: ;
+    --brand-color-tertiary: #666666;
 
     --background-color-primary:
     --background-color-secondary:
@@ -48,9 +48,6 @@ header * {
     align-items: center;
 }
 
-.navigation-bar li {
-    
-}
 
 .navigation-bar a {
     flex-grow: 1;
@@ -64,6 +61,11 @@ header * {
 
 .navigation-bar a:hover {
     transform: scale(1.05);
+    background-color: var(--brand-color-tertiary);
+}
+
+.navigation-bar .active {
+    background-color: var(--brand-color-primary);
 }
 
 footer {
