@@ -7,10 +7,10 @@
     margin: 0;
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: all 300ms ease-in-out;
 }
 
 body {
-
 }
 
 header {
@@ -38,16 +38,21 @@ header * {
 }
 
 .navigation-bar li {
+    
+}
+
+.navigation-bar a {
     flex-grow: 1;
-    width: 100%;
-    height:100%;
     list-style: none;
     text-align: center;
     align-content: center;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
 }
 
-.navigation-bar li:hover {
-    flex-grow: 2;
+.navigation-bar a:hover {
+    transform: scale(1.05);
 }
 
 footer {
@@ -89,6 +94,10 @@ div {
 .box {
     /*Design the content of the boxes here*/
     flex-grow: 1;
+}
+
+.box:hover {
+    flex-grow: 3;
 }
 
 .projects{
