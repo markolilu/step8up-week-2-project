@@ -111,20 +111,44 @@ div {
 
 .box {
     /*Design the content of the boxes here*/
-    flex-grow: 1;
     margin: 10px;
+    display: flex;
 }
 
 .box:hover {
-    flex-grow: 3;
+    transform: scale(1.05);
 }
+
+.box-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
 
 .projects{
     grid-area: latest-project;
     margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .contact{
     grid-area: contact-form;
     margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
