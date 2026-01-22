@@ -254,3 +254,41 @@ footer {
         width: 20%;
     }
 }
+
+@media (max-width: 748px) {
+    
+    .container{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 200px 1fr 1fr 1fr;
+    gap: 10px;
+    grid-template-areas: 
+        "banner"
+        "services"
+        "latest-project"
+        "contact-form";
+    }
+
+    .content{
+    
+    grid-area: services;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    }
+
+    .box{
+        max-width: 400px;
+        min-width: 300px;
+        margin:auto;
+    }
+
+    .projects, .contact{
+        max-width: 400px;
+        min-width: 300px;
+        margin:auto;
+    }
+   
+}
